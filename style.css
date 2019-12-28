@@ -1,5 +1,5 @@
 body {
-    background-color: #2A7C7D;
+    background-color: #5DBCD2;
 }
 
 .content {
@@ -7,7 +7,7 @@ body {
     margin: 0 auto;
     margin-top: 20px !important;
     border: 1px solid black;
-    background-color: white;
+    background-color: #fefbd8;
 }
 
 h1 {
