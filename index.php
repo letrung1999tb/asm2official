@@ -47,7 +47,7 @@
                     </div>
 
                     <div class="container-login100-form-btn">
-                     <input class="input100" type="submit" value="Login" >
+                     <input class="input100" type="submit" value="Login" style="font-size:50px">
                          
                      </style>>
                 
