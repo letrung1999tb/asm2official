@@ -41,20 +41,23 @@ if(isset($_POST["aduser"]) && isset($_POST["adpass"]))
                 <th class="tit">Name</th>
                 <th class="tit">Price ($)</th>
                 <th class="tit">Description</th>
+                <th class="tit">Image</th>
                 <th class="tit">Editing</th>
             </tr>
 
             <?php
-            require_once './database.php';
+            require("connect.php");
             $sql = "SELECT * FROM product";
-            $stmt = $pdo->prepare($sql);
-            foreach ($pdo->query($sql) as $row) {
+            $result = pg_query($conn, $sql);
+            // $num_rows = mysql_num_rows($result);
+            while($row = pg_fetch_assoc($result)) {
             ?>
                 <tr>
                     <td class="info"><?php echo $row['productid']?></td> 
                     <td class="info"><?php echo $row['proname']?></td> 
                     <td class="info"><?php echo $row['price']?></td> 
-                    <td class="info"><?php echo $row['descrip']?></td> 
+                    <td class="info"><?php echo $row['descript']?></td> 
+                    <td class="info"><img src="<?php echo $row['img']?>" alt="" width="100" height="100"></td> 
                     <td class="info">
                         <form action='/delete.php' method="POST" onsubmit="return confirmDelete();">
                             <input type='hidden' name='productid' value='<?php echo $row['productid']?>'>
