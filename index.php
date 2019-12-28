@@ -47,7 +47,9 @@
                     </div>
 
                     <div class="container-login100-form-btn">
-                     <input class="input-information" type="submit" value="Login">
+                     <input class="input100" type="submit" value="Login" >
+                         
+                     </style>>
                 
 
                     </div>
