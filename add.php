@@ -69,10 +69,10 @@
             <input class="input-information " type="text" width="300" height="100" name="descript" placeholder="Description"> <br>
 
             <div class="margin">Select images: <input type="file" name="images"></div><br>
-            <button  class="input-information "type="submit" value="Add" name="submit">Add</button>
+            <button  class="button"type="submit" value="Add" name="submit">Add</button>
         </form>
         
-        <button><a href="/managing.php">Back</a></button>
+        <button class="button"><a href="/managing.php">Back</a></button>
     </div>
 </body>
 
