@@ -6,16 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="/style.css">
-    
-    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
 
-    <link rel="stylesheet" type="text/css" href="util.css">
-    <link rel="stylesheet" type="text/css" href="main.css">
+
+
     <title>Add</title>
 </head>
 
 <body>
-    <div class="container-login100">
+    <div class="form-group">
         <h1>Adding Product Form</h1>
         <?php 
         require("connect.php");   
@@ -66,9 +64,9 @@
             }
 			?>
         <form action="add.php" method="POST" enctype="multipart/form-data">
-            <input class="input100" type="text" width="300" height="100" name="proname" placeholder="Name"> <br>
-            <input class="input100" type="text" width="300" height="100" name="price" placeholder="Price"> <br>
-            <input class="iinput100" type="text" width="300" height="100" name="descript" placeholder="Description"> <br>
+            <input class="form-group" type="text" width="300" height="100" name="proname" placeholder="Name"> <br>
+            <input class="form-group" type="text" width="300" height="100" name="price" placeholder="Price"> <br>
+            <input class="form-group" type="text" width="300" height="100" name="descript" placeholder="Description"> <br>
 
             <div>Select images: <input type="file" name="images"></div><br>
             <button  class="container-login100-form-btn"type="submit" value="Add" name="submit">Add</button>

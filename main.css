@@ -475,6 +475,8 @@ iframe {
   right: 18px;
 }
 
+ 
+
 .alert-validate:hover:before {
   visibility: visible;
   opacity: 1;
