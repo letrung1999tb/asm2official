@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="/style.css">
 
-    <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+  
 
     <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
 
