@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <div class="form-group">
+    <div class="form-style-5">
         <h1>Adding Product Form</h1>
         <?php 
         require("connect.php");   
