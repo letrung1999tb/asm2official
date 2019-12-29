@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="form-horizontal">
         <h1>Adding Product Form</h1>
         <?php 
         require("connect.php");   
@@ -50,7 +50,7 @@
                                 $img = './images/' . $_FILES['images']['name'];
                                 move_uploaded_file($_FILES['images']['tmp_name'], './images/' . $_FILES['images']['name']);
                             }
-                            
+
                             $sql = "INSERT INTO product(proname, price, descript, img) VALUES ('$name','$price','$descript', '$img')";
                             pg_query($conn,$sql);
 
@@ -65,12 +65,12 @@
             }
 			?>
         <form action="add.php" method="POST" enctype="multipart/form-data">
-            <input class="input-information" type="text" width="300" height="100" name="proname" placeholder="Name"> <br>
-            <input class="input-information" type="text" width="300" height="100" name="price" placeholder="Price"> <br>
-            <input class="input-information" type="text" width="300" height="100" name="descript" placeholder="Description"> <br>
+            <input class="col-md-4 control-label" type="text" width="300" height="100" name="proname" placeholder="Name"> <br>
+            <input class="col-md-4 control-label" type="text" width="300" height="100" name="price" placeholder="Price"> <br>
+            <input class="col-md-4 control-label" type="text" width="300" height="100" name="descript" placeholder="Description"> <br>
 
             <div>Select images: <input type="file" name="images"></div><br>
-            <button type="submit" value="Add" name="submit">Add</button>
+            <button class="btn btn-primary" type="submit" value="Add" name="submit">Add</button>
         </form>
         
         <button><a href="/managing.php">Back</a></button>
