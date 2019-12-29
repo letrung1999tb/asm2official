@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <div class="form-style-5">
+    <div class="content">
         <h1>Adding Product Form</h1>
         <?php 
         require("connect.php");   
@@ -64,12 +64,12 @@
             }
 			?>
         <form action="add.php" method="POST" enctype="multipart/form-data">
-            <input class="form-group" type="text" width="300" height="100" name="proname" placeholder="Name"> <br>
-            <input class="form-group" type="text" width="300" height="100" name="price" placeholder="Price"> <br>
-            <input class="form-group" type="text" width="300" height="100" name="descript" placeholder="Description"> <br>
+            <input class="input-information " type="text" width="300" height="100" name="proname" placeholder="Name"> <br>
+            <input class="input-information " type="text" width="300" height="100" name="price" placeholder="Price"> <br>
+            <input class="input-information " type="text" width="300" height="100" name="descript" placeholder="Description"> <br>
 
             <div>Select images: <input type="file" name="images"></div><br>
-            <button  class="container-login100-form-btn"type="submit" value="Add" name="submit">Add</button>
+            <button  class="input-information "type="submit" value="Add" name="submit">Add</button>
         </form>
         
         <button><a href="/managing.php">Back</a></button>
